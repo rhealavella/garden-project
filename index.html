@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gardening 👩🏽‍🌾</title>
+  </head>
+  <style>
+    .theme-button {
+      background-color: black;
+      color: white;
+      font-family: Rosmatika;
+      font-size: 12px;
+      padding: 5 8px;
+    }
+    .theme-button:hover {
+      color: black;
+      background-color: white;
+    }
+    .gardening-intro-image {
+      border-radius: 10px;
+      transition: all 200ms ease-in-out;
+      background: ;
+    }
+    .gardening-intro-image:hover {
+      opacity: 0.7;
+      transform: scale(1.2);
+    }
+    body {
+      background: linear-gradient(
+        179.4deg,
+        rgb(253, 240, 233) 2.2%,
+        rgb(255, 194, 203) 96.2%
+      );
+    }
+    h1 {
+      text-align: center;
+      font-family: Aesthetic;
+      font-size: 50pt;
+    }
+    h2 {
+      text-align: center;
+      font-family: Rosmatika;
+      font-size: 25pt;
+    }
+    img {
+      max-width: 100%;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      border: 1px;
+      background-color: white;
+      color: olive;
+      font-size: 20px;
+      border-radius: 6px;
+      padding: 10px;
+      transition: all 200ms ease-in-out;
+      font-family: Ethereal;
+    }
+    .content {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: olive;
+      padding: 20px;
+      border-radius: 20px;
+      font-family: Ethereal;
+    }
+    .gardening-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 15px;
+      border-radius: 10;
+      margin: 15px;
+    }
+    .gardening-gallery-grid img {
+      max-height: 0.5fr;
+      max-width: 1fr;
+      border-radius: 10px;
+      transition: all 200ms ease-in-out;
+    }
+    .gardening-gallery-grid img:hover {
+      transform: scale(1.5);
+    }
+    a {
+      color: pink;
+    }
+    p {
+      font-size: 14pt;
+      line-height: 1.5;
+    }
+    footer {
+      text-align: center;
+      margin: 10px 0;
+      color: olive;
+      font-size: 20px;
+      font-family: Retro Boldy;
+      font-weight: lighter;
+    }
+    .dark {
+      background: linear-gradient(
+        112.1deg,
+        rgb(32, 38, 57) 11.4%,
+        rgb(63, 76, 119) 70.2%
+      );
+      color: white;
+    }
+    .dark .content {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .dark a {
+      color: pink;
+    }
+    .dark footer {
+      color: pink;
+    }
+  </style>
+  <button class="theme-button">Change Theme</button>
+  <body>
+    <div class="content">
+      <h1>GARDENING</h1>
+      <h2>My favourite summer hobby</h2>
+      <a href="https://www.almanac.com/gardening" target="_blank">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/080/original/kenny-eliason-QMj47_NSmfs-unsplash.jpg?1684976206"
+          alt=""
+          class="gardening-intro-image"
+        />
+      </a>
+      <div class="gardening-gallery-grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/081/original/liana-mikah-6KRmH6k3Rdk-unsplash.jpg?1684976230"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/083/original/markus-spiske-sFydXGrt5OA-unsplash.jpg?1684976263"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/084/original/samantha-fortney-nKotRZMxXPA-unsplash.jpg?1684976280"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/086/original/jean-carlo-emer-3U7SJ2YRDcs-unsplash.jpg?1684976614"
+          alt=""
+        />
+      </div>
+      <p>
+        Gardening has been around for as long as humans have been growing food.
+        Through the centuries, gardens have served not only as places to grow
+        plants but as spaces for people to relax, to focus, and to connect with
+        nature and each other. Today, gardening can provide many mental health
+        benefits for your daily life.<br />
+        <a
+          href="https://www.webmd.com/mental-health/how-gardening-affects-mental-health"
+          target="_blank"
+          title="How Gardening Affects Mental Health"
+        >
+          More mental health benefits of gardening 💚</a
+        >
+      </p>
+    </div>
+    <footer>Designed & Coded by: Rhea La Vella</footer>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        body.classList.toggle("dark");
+      }
+
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
